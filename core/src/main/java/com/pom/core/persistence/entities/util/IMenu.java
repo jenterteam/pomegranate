@@ -1,14 +1,12 @@
-package com.pom.core.persistence.entities;
+package com.pom.core.persistence.entities.util;
 
+import com.pom.core.persistence.entities.IEntity;
 import com.pom.core.persistence.entities.security.IEntitySecurity;
 
 import java.util.List;
 import java.util.Map;
 
-/**
- * Tüm illeri ülkeye göre çekecek kod
- */
-public interface IIl extends IEntity<IEntitySecurity>{
+public interface IMenu extends IEntity<IEntitySecurity> {
     /**
      * 1
      * @return
@@ -37,29 +35,47 @@ public interface IIl extends IEntity<IEntitySecurity>{
      * 5
      * @return
      */
-    String getKodu();
+    String getText();
 
     /**
      * 6
      * @return
      */
-    String getAdi();
+    String getPath();
 
     /**
      * 7
      * @return
      */
-    List<? extends IIlce> getIlceList();
+    Integer getIndex();
 
     /**
      * 8
      * @return
      */
-    Map<String, Object> getUlke();
+    IMenu getParent();
 
     /**
      * 9
      * @return
      */
-    IUlke getUlkeObj();
+    String getModule();
+
+    /**
+     * 10
+     * @return
+     */
+    String getIcon();
+
+    /**
+     * 11
+     * @return
+     */
+    List<IMenu> getItems();
+
+    /**
+     * 12
+     * @param items
+     */
+    void setItems(List<IMenu> items);
 }

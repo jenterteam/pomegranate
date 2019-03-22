@@ -1,5 +1,6 @@
-package com.pom.core.persistence.entities;
+package com.pom.core.persistence.entities.user;
 
+import com.pom.core.persistence.entities.IEntity;
 import com.pom.core.persistence.enums.SessionEvent;
 
 public interface IUserSession extends IEntity {

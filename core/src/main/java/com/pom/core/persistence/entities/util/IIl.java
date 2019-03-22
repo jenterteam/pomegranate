@@ -1,10 +1,15 @@
-package com.pom.core.persistence.entities;
+package com.pom.core.persistence.entities.util;
 
+import com.pom.core.persistence.entities.IEntity;
 import com.pom.core.persistence.entities.security.IEntitySecurity;
 
+import java.util.List;
 import java.util.Map;
 
-public interface IIlce extends IEntity<IEntitySecurity>{
+/**
+ * Tüm illeri ülkeye göre çekecek kod
+ */
+public interface IIl extends IEntity<IEntitySecurity> {
     /**
      * 1
      * @return
@@ -42,14 +47,20 @@ public interface IIlce extends IEntity<IEntitySecurity>{
     String getAdi();
 
     /**
-     * todo
+     * 7
      * @return
      */
-    Map<String, Object> getIl();
+    List<? extends IIlce> getIlceList();
 
     /**
-     * todo
+     * 8
      * @return
      */
-    IIl getIlObj();
+    Map<String, Object> getUlke();
+
+    /**
+     * 9
+     * @return
+     */
+    IUlke getUlkeObj();
 }

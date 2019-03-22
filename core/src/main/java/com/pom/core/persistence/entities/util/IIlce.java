@@ -1,11 +1,11 @@
-package com.pom.core.persistence.entities;
+package com.pom.core.persistence.entities.util;
 
+import com.pom.core.persistence.entities.IEntity;
 import com.pom.core.persistence.entities.security.IEntitySecurity;
 
-import java.util.List;
 import java.util.Map;
 
-public interface IUserLevel extends IEntity<IEntitySecurity>{
+public interface IIlce extends IEntity<IEntitySecurity> {
     /**
      * 1
      * @return
@@ -34,35 +34,23 @@ public interface IUserLevel extends IEntity<IEntitySecurity>{
      * 5
      * @return
      */
-    IUser getUser();
+    String getKodu();
 
     /**
      * 6
      * @return
      */
-    ILevel getLevel();
+    String getAdi();
 
     /**
-     * 7
-     * @param user
-     */
-    void setUser(IUser user);
-
-    /**
-     * 8
-     * @param level
-     */
-    void setLevel(ILevel level);
-
-    /**
-     * 9
+     * todo
      * @return
      */
-    List<? extends IGroup> getGroups();
+    Map<String, Object> getIl();
 
     /**
-     * 10
-     * @param groups
+     * todo
+     * @return
      */
-    void setGroups(List<? extends IGroup> groups);
+    IIl getIlObj();
 }

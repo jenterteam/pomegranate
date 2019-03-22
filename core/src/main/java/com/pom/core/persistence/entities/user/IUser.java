@@ -1,6 +1,8 @@
-package com.pom.core.persistence.entities;
+package com.pom.core.persistence.entities.user;
 
+import com.pom.core.persistence.entities.IEntity;
 import com.pom.core.persistence.entities.security.IEntitySecurity;
+import com.pom.core.persistence.entities.util.IRole;
 
 import java.util.List;
 

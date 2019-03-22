@@ -1,5 +1,6 @@
-package com.pom.core.persistence.entities;
+package com.pom.core.persistence.entities.util;
 
+import com.pom.core.persistence.entities.IEntity;
 import com.pom.core.persistence.entities.security.IEntitySecurity;
 
 public interface IRole extends IEntity<IEntitySecurity> {

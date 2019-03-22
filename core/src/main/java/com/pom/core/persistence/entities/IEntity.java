@@ -4,6 +4,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
+ *  Created by mustafagungor on 22.03.2019
+ */
+/**
+ *
  * BaseEntity class
  * @param <T>
  */

@@ -5,6 +5,9 @@ import com.pom.core.persistence.PropertyOrder;
 import java.util.List;
 import java.util.Map;
 
+/**
+ *  Created by mustafagungor on 22.03.2019
+ */
 public interface IBaseDao<T>  {
     /**
      * 1
